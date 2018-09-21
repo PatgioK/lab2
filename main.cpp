@@ -1,4 +1,3 @@
-
 #include <iostream>
 #include <fstream>
 #include <iomanip>
@@ -10,14 +9,11 @@
 void readFile();
 
 int main() {
-
     std::ofstream reading;
     reading.open("Readings.txt");
 
-
     double min = 50;
     double max = 90;
-
 
     std::default_random_engine generator(time(0));
     std::uniform_real_distribution<double>
